@@ -1,11 +1,4 @@
 ﻿using botUniDubna.Models;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using VkNet.Model;
 using VkNet.Model.RequestParams;
 
@@ -22,6 +15,12 @@ namespace botUniDubna.Dialogs
          
         public MessagesSendParams Response()
         {
+            // TODO
+            // реализовать проверку последнего входа пользователя и
+            // при долгом его отсутствии переход в специальный диалог,
+            // где его будут приветствовать с удивлением от того, как долго
+            // он не подавал никаких сигналов
+
             switch (Message.Text)
             {
                 case "Новости":

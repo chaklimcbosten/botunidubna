@@ -28,6 +28,9 @@ namespace botUniDubna.Controllers
         [HttpPost]
         public IActionResult Callback([FromBody] Updates updates)
         {
+            // TODO
+            // реализовать проверку security-key
+
             // Тип события
             switch (updates.Type)
             {
